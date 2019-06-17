@@ -8,6 +8,7 @@
     "url": "https://github.com/io22titarenko/webbylab.git"
   },
   "scripts": {
+    "build": "webpack --config webpack.config.prod.js",
     "test": "mocha test",
     "start": "node server/main"
   },
@@ -23,7 +24,27 @@
     "multer": "^1.4.1",
     "pg": "^7.11.0",
     "sequelize": "^5.8.8",
-    "supertest": "^4.0.2"
+    "supertest": "^4.0.2",
+    "axios": "^0.19.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-router-dom": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
   },
   "author": "Vladimir Titarenko",
   "license": "ISC"

@@ -37,6 +37,7 @@ function startServer(host, port, routers, errorHandler) {
         })
         next()
     })
+    app.use(express.static('dist'))
     routers.forEach(((router) => {
         app.use(router.prefix || '', router)
     }))
